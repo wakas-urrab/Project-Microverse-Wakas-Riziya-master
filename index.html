@@ -2,13 +2,55 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel = "stylesheet" type="text/css" href = "mystle.css"
+<link rel = "stylesheet" type="text/css" href = "mystle.css">
+  <style>
+    .example {
+      padding: 20px;
+      color: white;
+    }
+    /* Extra small devices (phones, 600px and down) */
+    @media only screen and (max-width: 600px) {
+      .example {background: red;}
+    }
+
+    /* Small devices (portrait tablets and large phones, 600px and up) */
+    @media only screen and (min-width: 600px) {
+      .example {background: green;}
+    }
+
+    /* Medium devices (landscape tablets, 768px and up) */
+    @media only screen and (min-width: 768px) {
+      .example {background: blue;}
+    }
+
+    /* Large devices (laptops/desktops, 992px and up) */
+    @media only screen and (min-width: 992px) {
+      .example {background: orange;}
+    }
+
+    /* Extra large devices (large laptops and desktops, 1200px and up) */
+    @media only screen and (min-width: 1200px) {
+      .example {background: pink;}
+    }
+    .flex-container {
+      display: flex;
+      justify-content: center;
+    }
+
+    .flex-container > div {
+      background-color: #f1f1f1;
+      width: 150px;
+      margin: 10px;
+      text-align: center;
+      line-height: 200px;}
+
+  </style>
 </head>
 <body>
 <header id="header-img">
   <img  src="logo.gif" alt="logo" height="10" width="12">
 
-  <nav id="nav-bar">
+  <nav id="nav-bar" class="top-bar fixed">
     <a class="nav-link"  href="html_images.asp">features</a>
     <a class="nav-link"  href="html_images.asp">how to work </a>
     <a class="nav-link"  href="html_images.asp">pricing </a>
@@ -30,10 +72,39 @@
 
 
 
-  <div>
+  <div class="flex-container">
+    <div>
+      <h4>TENOR TROMBONE</h4>
+      <p>$600 <br>
+        Lorem ipsum.<br>
+        Lorem ipsum.<br>
+        Lorem ipsum dolor. <br>
+        Lorem ipsum.</p>
+      <button type="button"> SELECTE</button>
 
+    </div>
+    <div>
+      <h4>BASS TROMBONE</h4>
+      <p>$900 <br>
+        Lorem ipsum.<br>
+        Lorem ipsum.<br>
+        Lorem ipsum dolor. <br>
+        Lorem ipsum.</p>
+      <button type="button"> SELECTE</button>
 
+    </div>
+    <div>
+      <h4>TVALVE TROMBONE</h4>
+      <p>$1200 <br>
+        Lorem ipsum.<br>
+        Lorem ipsum.<br>
+        Lorem ipsum dolor. <br>
+        Lorem ipsum.</p>
+      <button type="button"> SELECTE</button>
+
+    </div>
   </div>
+
 </main>
 </body>
 </html>
